@@ -36,7 +36,7 @@ export class ProjectsComponent {
       imageUrl: 'assets/project1.jpg',
       description:
         'Simple react application which performs functions on text entered by user. Dark and light mode available.',
-      link: 'https://github.com/snehalbargaje291/play-with-text',
+      link: 'https://github.com/snehalbargaje291/PlayWithText',
     },
     {
       title: 'Art Auction Management System',
@@ -49,8 +49,15 @@ export class ProjectsComponent {
       title: 'Peer To Peer Carpooling',
       imageUrl: 'assets/project2.jpg',
       description: ' This project is prepared to maintain the database of all rides and also for keeping records of customers and rides. It helps admin overhead of keeping records manually and also helps in searching specific customer demanded rides',
-      link: 'https://example.com/project2',
+      link: 'https://github.com/snehalbargaje291/Peer2Peer',
     },
+    {
+      title: 'News App',
+      imageUrl: 'assets/project2.jpg',
+      description: ' This project is developed to display news category wise from news API',
+      link: 'https://newsapp-zeta-three.vercel.app/',
+    },
+
     // Add more project objects as needed
   ];
 }
