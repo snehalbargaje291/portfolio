@@ -1,0 +1,59 @@
+nav {
+    background-color: #0B666A;
+}
+
+.navbar-brand {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #12b4b9, #2a65ad);
+}
+
+.navbar-toggler-icon {
+    background-image: url("../assets/images/menu.png");
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+.nav-link{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #12b4b9, #ffffff);
+}
+
+.nav-link:hover{
+    border-bottom: #ffffff solid 1px;
+}
+.social-icons {
+    position: fixed;
+    top: 20%;
+    right: 10px; 
+    transform: translateY(-50%);
+}
+
+.social-icon {
+    display: block;
+    font-size: 24px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #12b4b9, #ffffff);
+    text-decoration: none;
+    margin-bottom: 10px; 
+}
+
+.social-icon:hover {
+    color: #12b4b9; 
+}
+
+@media (max-width: 991px) {
+    .nav-link:hover{
+        border-bottom: none;
+    }
+}
+a[DownloadCV]:hover::after {
+    content: attr(DownloadCV);
+  }
