@@ -1,7 +1,7 @@
 /* Custom CSS for Flip Education Card */
 .education-card {
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    height: 300px;
     perspective: 1000px;
     cursor: pointer;
 }
