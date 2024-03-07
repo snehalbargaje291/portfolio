@@ -1,0 +1,11 @@
+<div class="main row">
+    <div class="skills-container col-md-6 p-0">
+      <div class="skill" *ngFor="let skill of skills" [ngStyle]="{ 'background-color': getRandomColor() }">
+        <span class="icon">{{ skill }}</span>
+      </div>
+    </div>
+    <div class="col-md-4 d-flex justify-content-center align-items-center">
+        <img class="img" src="../../../assets/images/coworking-male-programmer-writing-program-code.gif" alt="">
+    </div>
+  </div>
+  

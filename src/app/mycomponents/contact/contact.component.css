@@ -1,0 +1,46 @@
+.btn{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+  }
+  .btn:hover{
+    border: none;
+    background-color: #0B666A;
+  }
+  .btn a{
+    color: white;
+    text-decoration: none;
+  }
+  .form-control{
+    background-color: #0B666A;
+    color: white;
+    border: none;
+  }
+  .form-control::placeholder{
+    color: white;
+  }
+  .row{
+    --bs-gutter-x: 0;
+  }
+
+  .img{
+    width: 300px;
+    height: auto;
+  }
+  .success-message {
+    color: green;
+  }
+form{ 
+  margin-right: 60px;
+  margin-left: 60px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, #12b4b9, #c9e1ff);
+}
+@media (max-width:600px){
+  form{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}

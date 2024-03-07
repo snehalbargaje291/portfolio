@@ -1,0 +1,10 @@
+<div class="main d-flex justify-content-center align-items-center">
+  <div class="container my-5 d-flex flex-wrap justify-content-center">
+    <div class="project-card" *ngFor="let project of projects">
+      <h2>{{ project.title }}</h2>
+      <img [src]="project.imageUrl" alt="{{ project.title }}">
+      <p>{{ project.description }}</p>
+      <a href="{{ project.link }}" target="_blank">GitHub</a>
+    </div>
+  </div>
+</div> 

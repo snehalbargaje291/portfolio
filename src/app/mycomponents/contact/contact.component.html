@@ -1,0 +1,29 @@
+<div class="main py-5">
+  <div class="row d-flex justify-content-center align-items-center vh-80">
+    <div class="col-md-2 mx-4 d-flex justify-content-center align-items-center">
+      <img class="img" src="../../../assets/images/bubble-gum-message-sent.gif" alt="">
+    </div>
+    <div class="col-md mx-auto">
+      <h1 class="text-center">Contact Us</h1>
+      <form class="p-3" [formGroup]="contactForm" (ngSubmit)="submitForm()">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" formControlName="name" placeholder="Enter your name"
+            required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" formControlName="email" placeholder="Enter your email"
+            required />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="5" formControlName="message"
+            placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+        <p *ngIf="submitted && successMessage" class="success-message">{{ successMessage }}</p>
+      </form>
+    </div>
+  </div>
+</div>

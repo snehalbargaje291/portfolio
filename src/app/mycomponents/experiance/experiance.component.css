@@ -1,0 +1,10 @@
+.img{
+    width: 50%;
+    height: 50%;
+    border-radius: 15px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

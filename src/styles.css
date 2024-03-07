@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+html{
+    background-color: #35A29F;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #12b4b9, #ffffff);
+}
+
+.navbar-brand:hover,
+.fa:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+.main{
+    background: linear-gradient(to top, #35A29F, #0B666A);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
