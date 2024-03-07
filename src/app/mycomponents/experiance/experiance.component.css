@@ -8,3 +8,79 @@
     justify-content: center;
     align-items: center;
 }
+.experience-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience {
+    width: 800px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+@media (max-width:1023px){
+    .experience{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .col-4{
+        width: 100%;
+        text-align: center;
+    }
+    .col-8{
+        width: 100%;
+    }
+}
+.row{
+    --bs-gutter-x:0;
+}
+
+.role {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.company {
+    font-weight: 600;
+    font-size: 16px;
+    color: #666;
+}
+
+.date {
+    font-size: 14px;
+    color: #999;
+}
+
+.location {
+    font-size: 14px;
+    color: #999;
+}
+
+.description {
+    margin-top: 10px;
+    color: gray;
+    font-size: small;
+}
+
+.skills-learned {
+    font-size: small;
+    margin-top: 10px;
+    color: #666;
+}
+a{
+    text-decoration: none;
+    color: green;
+    text-align: center;
+    border: 1px solid green;
+    padding: 5px;
+    border-radius: 5px;
+}
