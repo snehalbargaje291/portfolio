@@ -7,10 +7,9 @@
                 <p class="card-text">{{ education.institution }}</p>
             </div>
             <div class="card-back row flex-column">
-                <p class="card-text col">{{ education.degree }}</p>
-                <span class="col">{{ education.percentage }}</span>
-                <span class="col">{{education.board}}</span>
-                <small class="text-muted col">Batch: {{ education.graduationYear }}</small>
+                {{ education.degree }}<br>
+                <span>{{ education.board }}  {{ education.percentage }}<br>
+                {{ education.graduationYear }}</span>
             </div>
           </div>   
     </div>                 

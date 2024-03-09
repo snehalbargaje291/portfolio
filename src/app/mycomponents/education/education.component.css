@@ -1,7 +1,7 @@
 /* Custom CSS for Flip Education Card */
 .education-card {
-    width: 250px;
-    height: 300px;
+    width: 150px;
+    height: 250px;
     perspective: 1000px;
     cursor: pointer;
 }
@@ -16,28 +16,28 @@
 }
 
 .card-front {
-    background-color: #cee5fd;
+    background: linear-gradient(to top, #12b4b9, #0B666A);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     text-align: center;
-    border: 1px solid white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10%;
     transform: rotateY(0deg);
-    color: #333; /* Change font color */
+    color: #ffffff; /* Change font color */
 }
 
 .card-back {
-    background-color: #cee5fd;
+    background: linear-gradient(to bottom, #12b4b9, #c3deff);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     text-align: center;
-    border: 1px solid white;
     border-radius: 10%;
     transform: rotateY(180deg);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     color: #333; /* Change font color */
 }
 
@@ -54,7 +54,7 @@
 }
 
 .card-title {
-    color: #007bff;
+    color: #ffffff;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -63,9 +63,9 @@
     font-weight: 600;
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(to right, #12b4b9, #2a65ad);
+    color: white;
     margin-bottom: 10px;
+    font-size: small;
 }
 
 .text-muted {
@@ -89,6 +89,7 @@
 .img {
     padding: 10px;
     transition: transform 0.3s ease;
+    border-radius: 50%;
 }
 
 .img:hover {
