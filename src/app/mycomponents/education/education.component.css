@@ -23,22 +23,22 @@
     padding: 10px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10%;
+    border-radius: 3%;
     transform: rotateY(0deg);
     color: #ffffff; /* Change font color */
 }
 
 .card-back {
-    background: linear-gradient(to bottom, #12b4b9, #c3deff);
+    background: linear-gradient(to bottom, #12b4b9, #0B666A);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     text-align: center;
-    border-radius: 10%;
+    border-radius: 3%;
     transform: rotateY(180deg);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    color: #333; /* Change font color */
+    font-weight: 600;
 }
 
 .education-card.flip .card-front {

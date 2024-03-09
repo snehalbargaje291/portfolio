@@ -30,7 +30,7 @@
     height: auto;
   }
   .success-message {
-    color: green;
+    color: rgb(86, 248, 86);
   }
 form{ 
   margin-right: 60px;
