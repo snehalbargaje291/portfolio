@@ -4,8 +4,9 @@ import { EducationComponent } from './mycomponents/education/education.component
 import { ExperianceComponent } from './mycomponents/experiance/experiance.component';
 import { ProjectsComponent } from './mycomponents/projects/projects.component';
 import { SkillsComponent } from './mycomponents/skills/skills.component';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './mycomponents/about/about.component';
 import { ContactComponent } from './mycomponents/contact/contact.component';
+import { ErrorComponent } from './mycomponents/error/error.component';
 
 export const routes: Routes = [
     {
@@ -36,4 +37,8 @@ export const routes: Routes = [
         path: "skills",
         component: SkillsComponent
     },
+    {
+        path: "**",
+        component: ErrorComponent
+    }
 ];
