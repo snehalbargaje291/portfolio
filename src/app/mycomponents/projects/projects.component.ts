@@ -48,7 +48,7 @@ export class ProjectsComponent {
       title: 'Learning Angular',
       description:
         'Some basic tasks while learning angular',
-      link:'https://vercel.com/snehalbargajes-projects/learningangular'
+      link:'https://learningangular.vercel.app/'
     },
 
     // Add more project objects as needed
