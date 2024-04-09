@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { RouterModule } from '@angular/router';
@@ -5,13 +6,19 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink,RouterModule],
+  imports: [CommonModule, RouterOutlet, RouterLink,RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'My-Resume';
-  brand="<Portfolio./>"
+  brand="<Portfolio./>";
+  rotateIcon = false; // Track the state of icon rotation
+
+  // Function to toggle the icon and its rotation animation
+  toggleIcon() {
+    this.rotateIcon = !this.rotateIcon;
+  }
 
   redirectToLinkedin() {
     window.location.href = 'https://www.linkedin.com/in/snehal-bargaje-6ab0681b4/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app';

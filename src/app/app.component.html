@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md p-0">
+<!-- <nav class="navbar navbar-expand-md p-0">
   <div class="px-5 container-fluid">
     <a class="navbar-brand fw-bolder fs-3" routerLink="">{{brand}}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,22 +15,7 @@
         <li class="nav-item px-2">
           <a class="nav-link fw-bold" routerLink="contact">Contact</a>
         </li>
-        <!-- <li class="nac-item px-2 dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li> -->
       </ul>
-      <!-- <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-secondary" type="submit">Search</button>
-      </form> -->
       <div class="nav-item">
         <a class="fa fa-download" href="../../../assets/Resume (3)_removed.pdf" download title="DownloadCV" download="Resume.pdf"></a>
         <a (click)="redirectToLinkedin()" class="fa fa-linkedin"></a>
@@ -38,9 +23,28 @@
       </div>
     </div>
   </div>
-</nav>
-<div class="social-icons">
-  <a href="tel:9309976227" class="social-icon fa fa-phone"></a>
-  <a href="mailto:snehal.bargaje291@gmail.com" class="social-icon fa fa-envelope"></a>
+</nav> -->
+<div class="my">
+  <nav>
+    <input type="checkbox" id="check" name="" value="" (change)="toggleIcon()">
+    <label for="check" id="checkbtn">
+      <i class="fa" [class.fa-bars]="!rotateIcon" [class.fa-times]="rotateIcon" [ngStyle]="{'animation': rotateIcon ? 'rotateIcon 0.3s ease' : 'none'}"></i>
+    </label>
+    <label class="logo" routerLink="">{{brand}}</label>
+    <ul>
+        <li><a routerLink="">Home</a></li>
+        <li><a routerLink="about">About</a></li>
+        <li><a routerLink="contact">Contact</a></li>
+        <li class="nav-item">
+          <a class="fa fa-download" href="../../../assets/Resume (3)_removed.pdf" download title="DownloadCV" download="Resume.pdf"></a>
+          <a (click)="redirectToLinkedin()" class="fa fa-linkedin"></a>
+          <a (click)="redirectToGithub()" class="fa fa-github"></a>
+        </li>
+    </ul>
+  </nav>
+  <div class="social-icons">
+    <a href="tel:9309976227" class="social-icon fa fa-phone"></a>
+    <a href="mailto:snehal.bargaje291@gmail.com" class="social-icon fa fa-envelope"></a>
+  </div>
+  <router-outlet></router-outlet>
 </div>
-<router-outlet></router-outlet>

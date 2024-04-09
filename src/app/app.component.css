@@ -1,4 +1,4 @@
-nav {
+/* nav {
     background-color: #0B666A;
 }
 
@@ -56,4 +56,148 @@ nav {
 }
 a[DownloadCV]:hover::after {
     content: attr(DownloadCV);
-  }
+  } */
+
+/* Basic Styles for Navigation and Layout */
+.my{
+    background-color: #0B666A;
+}
+nav {
+    width: 100%;
+    margin: auto;
+    background-color: #1c8b9169;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem; /* Added padding for better spacing */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 3rem;
+    margin-left: 1rem; /* Adjusted margin for better alignment */
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #12b4b9, #ffffff);
+    color: transparent;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 1rem;
+    line-height: 3rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: capitalize;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #12b4b9, #ffffff);
+    font-weight: bolder;
+}
+
+#checkbtn {
+    font-size: 1rem;
+    color: white;
+    display: none; /* Will display in mobile view */
+    transition: font-size 0.3s ease, transform 0.3s ease;
+}
+#checkbtn .fa{
+    padding: 0;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ ul {
+    display: block; /* Show menu when checkbox is checked */
+    left: 0;
+}
+
+#check:checked + #checkbtn i.fa-times {
+    font-size: 1.5rem;
+}
+
+#check:checked ~ #checkbtn {
+    transform: rotate(-90deg);
+}
+
+/* Mobile View and Adjustments */
+@media (max-width: 618px) {
+    #checkbtn {
+        display: block;
+    }
+
+    .logo {
+        font-size: 26px;
+        margin-left: 1rem;
+    }
+
+    nav {
+        width: 100%;
+        border-radius: 0;
+        flex-direction: row-reverse;
+        margin: 0;
+    }
+
+    nav ul {
+        display: flex; /* Changed to flex to maintain flex properties */
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 3rem; 
+        left: -100%; /* Start off-screen to the left */
+        width: 100%;
+        transition: left 0.5s; /* Transition the left property for smooth sliding effect */
+        z-index: 0; /* Ensure menu is above other content */
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        margin: 15px 0;
+    }
+
+    #check:checked ~ ul {
+        left: 0; /* Slide in from the left */
+    }
+}
+
+
+/* Styling for Social Icons */
+.social-icons {
+    position: fixed;
+    top: 20%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.social-icon {
+    display: block;
+    font-size: 24px;
+    color: #12b4b9; /* Adjusted for visibility */
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.social-icon:hover {
+    color: #ffffff; /* Hover effect */
+}
+
+/* Specific style for the download CV link */
+a[title="DownloadCV"]:hover::after {
+    content: attr(title);
+}
+
