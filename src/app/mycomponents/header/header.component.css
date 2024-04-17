@@ -48,11 +48,13 @@
 .img{
     width: 50%;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-    transition: box-shadow 0.3s ease;
+    z-index: 0;
+    filter: drop-shadow(4px 4px 4px rgba(150, 238, 238, 0.986));
+    transition: filter 0.3s ease;
 }
 .img:hover {
-  transform: scale(1.1); /* Scale up the picture on hover */
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in;
 }
 
 .btn{
