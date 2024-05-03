@@ -18,8 +18,19 @@
   margin: 0 10px 20px;
   background: linear-gradient(to top, #12b4b9, #0B666A);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideFromOutside 1.5s ease forwards;
 }
 
+@keyframes slideFromOutside {
+  0% {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
 
 .project-card h2 {
   font-size: 24px;

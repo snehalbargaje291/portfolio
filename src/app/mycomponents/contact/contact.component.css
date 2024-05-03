@@ -36,7 +36,7 @@ form{
   margin-right: 60px;
   margin-left: 60px;
   border-radius: 15px;
-  background: linear-gradient(to bottom, #12b4b9, #0B666A);
+  /* background: linear-gradient(to bottom, #12b4b9, #0B666A); */
 }
 @media (max-width:600px){
   form{

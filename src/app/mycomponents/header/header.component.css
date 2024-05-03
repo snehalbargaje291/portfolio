@@ -51,10 +51,36 @@
     z-index: 0;
     filter: drop-shadow(4px 4px 4px rgba(150, 238, 238, 0.986));
     transition: filter 0.3s ease;
+    animation: slideFromOutsideL 1.5s ease forwards;
+}
+.container{
+  animation: slideFromOutsideR 1.5s ease forwards;
 }
 .img:hover {
   transform: scale(1.1);
   transition: transform 0.5s ease-in;
+}
+
+@keyframes slideFromOutsideR {
+  0% {
+      opacity: 0;
+      transform: translateX(100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideFromOutsideL {
+  0% {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
 }
 
 .btn{
