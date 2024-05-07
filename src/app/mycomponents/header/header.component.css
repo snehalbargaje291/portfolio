@@ -47,9 +47,9 @@
 }
 .img{
     width: 50%;
-    border-radius: 50%;
+    border-radius: 30%;
     z-index: 0;
-    filter: drop-shadow(4px 4px 4px rgba(150, 238, 238, 0.986));
+    filter: drop-shadow(10px 7px 10px black);
     transition: filter 0.3s ease;
     animation: slideFromOutsideL 1.5s ease forwards;
 }

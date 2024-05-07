@@ -1,9 +1,21 @@
+@keyframes slideFromOutside {
+  0% {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
 .btn{
     background-color: transparent;
     border: 1px solid white;
     border-radius: 20px;
     color: white;
     text-align: center;
+    /* animation: slideFromOutside 1.5s ease forwards; */
   }
   .btn:hover{
     border: none;
@@ -14,20 +26,24 @@
     text-decoration: none;
   }
   .form-control{
-    background-color: #0B666A;
-    color: white;
+    /* background-color: #0B666A; */
+    /* color: white; */
+    color: rgba(94, 94, 94, 0.637);
     border: none;
+    animation: slideFromOutside 1.5s ease forwards;
   }
   .form-control::placeholder{
-    color: white;
+    color: rgba(94, 94, 94, 0.637);
+    animation: slideFromOutside 1.5s ease forwards;
   }
   .row{
     --bs-gutter-x: 0;
   }
-
   .img{
     width: 300px;
     height: auto;
+    filter: drop-shadow(10px 7px 10px black);
+    animation: slideFromOutside 1.5s ease forwards;
   }
   .success-message {
     color: rgb(86, 248, 86);

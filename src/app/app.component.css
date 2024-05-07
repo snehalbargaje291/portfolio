@@ -21,6 +21,7 @@ nav {
     -webkit-background-clip: text;
     background-image: linear-gradient(to right, #12b4b9, #ffffff);
     color: transparent;
+    /* animation: slideFromOutside 1.5s ease forwards; */
 }
 
 nav ul {
