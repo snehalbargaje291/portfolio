@@ -50,6 +50,12 @@ export class ProjectsComponent {
         'Some basic tasks while learning angular',
       link:'https://learningangular.vercel.app/'
     },
+    {
+      title: 'Library and Bookshelf',
+      description:
+        'Some basic tasks while learning react',
+      link:'https://library-and-book-shelf.vercel.app/'
+    },
 
     // Add more project objects as needed
   ];
